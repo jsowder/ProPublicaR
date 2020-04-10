@@ -4,6 +4,7 @@
 #' HTTP Request: GET https://api.propublica.org/congress/v1/members/new.json
 #'
 #' @param myAPI_Key API key from Propublica To use the congress API, you must sign up for an API key.
+#' @param page Supports pagination through the ProPublica APIs. Page 1 is first 20, page 2 is next 20, etc.
 #'
 #' @return List of returned JSON from endpoint that retrieves a list of the most recent new members of the current Congress
 #' @export
