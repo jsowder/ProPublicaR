@@ -10,19 +10,22 @@ get_candidates_in_race(
   district,
   cycle = 2018,
   return_value = c("results", "query"),
+  page = 1,
   myAPI_Key
 )
 }
 \arguments{
 \item{state}{State abbreviation}
 
-\item{chamber}{hourse or senate}
+\item{chamber}{house or senate}
 
 \item{district}{house district}
 
 \item{cycle}{The election cycle in question, e.g. 2018}
 
 \item{return_value}{should results be retrieved, or query string returned.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
