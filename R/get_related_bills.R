@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_related_bills(115, 'hr3219')
 #' }
-get_related_bills <- function(congress, bill_id, page = 1, myAPI_Key){
+get_related_bills <- function(congress = cMaxCongress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:cMaxCongress){
     stop("Congress should be between 80 and ",cMaxCongress)

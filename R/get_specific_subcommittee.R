@@ -18,7 +18,7 @@
 #' lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$id,
 #' lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$subcommittees[[1]]$id)
 #' }
-get_specific_subcommittee <- function(congress, chamber, committee_id, subcommittee_id, page = 1, myAPI_Key){
+get_specific_subcommittee <- function(congress = cMaxCongress, chamber, committee_id, subcommittee_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 114:cMaxCongress){
     stop("Incorrect congress, should be between 110 and", cMaxCongress)

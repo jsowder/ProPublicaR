@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_official_communications_by_category(115, 'pm')
 #' }
-get_recent_official_communications_by_category <- function(congress, category, page = 1, myAPI_Key){
+get_recent_official_communications_by_category <- function(congress = cMaxCongress, category, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 96:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress," for House. Between 96 and ",cMaxCongress," for Senate")

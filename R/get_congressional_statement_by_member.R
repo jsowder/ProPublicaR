@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_congressional_statement_by_member("C001084", 115)
 #' }
-get_congressional_statement_by_member <- function(member_id, congress, page = 1, myAPI_Key){
+get_congressional_statement_by_member <- function(member_id, congress = cMaxCongress, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 113:cMaxCongress){
     stop("Incorrect congress, should be between 113 and ",cMaxCongress)

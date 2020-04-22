@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_congressional_statement_by_bill(115, 's19')
 #' }
-get_congressional_statement_by_bill <- function(congress, bill_id, page = 1, myAPI_Key){
+get_congressional_statement_by_bill <- function(congress = cMaxCongress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 113:cMaxCongress){
     stop("Incorrect congress, should be 113 through 116")

@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_nominees_by_state(115, 'VA')
 #' }
-get_nominees_by_state <- function(congress, state, page = 1, myAPI_Key){
+get_nominees_by_state <- function(congress = cMaxCongress, state, page = 1, myAPI_Key){
   API = 'congress'
   control <- 107:cMaxCongress
   if(!congress %in% 107:cMaxCongress){

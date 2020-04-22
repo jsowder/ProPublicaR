@@ -23,7 +23,7 @@
 #' \donttest{
 #' recent_bills_by_type(115, 'house', 'introduced')
 #' }
-recent_bills_by_type <- function(congress, chamber = c('house', 'senate', 'both'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), page = 1, myAPI_Key){
+recent_bills_by_type <- function(congress = cMaxCongress, chamber = c('house', 'senate', 'both'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate','both'))
     stop("Incorrect Chamber. Should be \'house\', \'senate\', or \'both\', lowercase.")

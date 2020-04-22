@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_cosponsors_specific_bill(114, 'hr4249')
 #' }
-get_cosponsors_specific_bill <- function(congress, bill_id, page = 1, myAPI_Key){
+get_cosponsors_specific_bill <- function(congress = cMaxCongress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:cMaxCongress){
     stop("Congress has to be between 105 and ", cMaxCongress)

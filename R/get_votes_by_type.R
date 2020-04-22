@@ -15,7 +15,7 @@
 #' \donttest{
 #' get_votes_by_type(114, 'house', 'missed')
 #' }
-get_votes_by_type <- function(congress, chamber = c('house', 'senate'), vote_type, page = 1, myAPI_Key){
+get_votes_by_type <- function(congress = cMaxCongress, chamber = c('house', 'senate'), vote_type, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")

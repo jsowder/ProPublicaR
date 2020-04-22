@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_house_senate_floor_actions(115, 'house')
 #' }
-get_recent_house_senate_floor_actions <- function(congress, chamber, page = 1, myAPI_Key){
+get_recent_house_senate_floor_actions <- function(congress = cMaxCongress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber %in% c('house', 'senate')){
     stop("Incorrect chamber. Should be \'senate\' or \'house'\ , lowercase")

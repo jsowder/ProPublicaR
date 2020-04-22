@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_nominations_by_category(115, 'confirmed')
 #' }
-get_recent_nominations_by_category <- function(congress, type, page = 1, myAPI_Key){
+get_recent_nominations_by_category <- function(congress = cMaxCongress, type, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 107:cMaxCongress){
     stop("Incorrect congress, should be between 107 and ",cMaxCongress)

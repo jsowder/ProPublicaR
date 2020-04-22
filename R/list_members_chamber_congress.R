@@ -13,7 +13,7 @@
 #' \donttest{
 #' list_members_chamber_congress(115, 'senate')
 #' }
-list_members_chamber_congress <- function(congress, chamber, page = 1, myAPI_Key){
+list_members_chamber_congress <- function(congress = cMaxCongress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")

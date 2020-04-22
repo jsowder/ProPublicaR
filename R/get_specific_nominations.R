@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_specific_nominations(115, 'PN40')
 #' }
-get_specific_nominations <- function(congress, nominee_id, page = 1, myAPI_Key){
+get_specific_nominations <- function(congress = cMaxCongress, nominee_id, page = 1, myAPI_Key){
   API = 'congress'
   control <- 107:cMaxCongress
   if(!congress %in% 107:cMaxCongress){

@@ -12,7 +12,7 @@
 #' \donttest{
 #' get_recent_official_communications(115)
 #' }
-get_recent_official_communications <- function(congress, page = 1, myAPI_Key){
+get_recent_official_communications <- function(congress = cMaxCongress, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 96:cMaxCongress){
     stop("Incorrect congress, should be 110 to ",cMaxCongress,

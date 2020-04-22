@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_personal_explanations_votes_specific_member('S001193', 115)
 #' }
-get_recent_personal_explanations_votes_specific_member <- function(member_id, congress, page = 1, myAPI_Key){
+get_recent_personal_explanations_votes_specific_member <- function(member_id, congress = cMaxCongress, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)

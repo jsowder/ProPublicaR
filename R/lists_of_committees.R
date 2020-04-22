@@ -13,7 +13,7 @@
 #' \donttest{
 #' lists_of_committees(115, "senate")
 #' }
-lists_of_committees <- function(congress, chamber, page = 1, myAPI_Key){
+lists_of_committees <- function(congress = cMaxCongress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ", cMaxCongress)

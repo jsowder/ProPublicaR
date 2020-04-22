@@ -17,7 +17,7 @@
 #' \donttest{
 #' get_specific_roll_call_vote(115, 'senate', 1, 17L)
 #' }
-get_specific_roll_call_vote <- function(congress, chamber = c('house', 'senate'), session_number, roll_call_number, page = 1, myAPI_Key){
+get_specific_roll_call_vote <- function(congress = cMaxCongress, chamber = c('house', 'senate'), session_number, roll_call_number, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")

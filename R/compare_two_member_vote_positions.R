@@ -15,7 +15,7 @@
 #' \donttest{
 #' compare_two_member_vote_positions('G000575', 'D000624', '114', 'house')
 #' }
-compare_two_member_vote_positions <- function(first_member_id, second_member_id, congress, chamber, page = 1, myAPI_Key){
+compare_two_member_vote_positions <- function(first_member_id, second_member_id, congress = cMaxCongress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")

@@ -12,7 +12,7 @@
 #' \donttest{
 #' get_recent_committee_hearing(115)
 #' }
-get_recent_committee_hearing <- function(congress, page = 1, myAPI_Key){
+get_recent_committee_hearing <- function(congress = cMaxCongress, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 114:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)

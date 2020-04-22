@@ -17,7 +17,7 @@
 #' 
 #' get_specific_committee(115, "senate", "SSAF")
 #' }
-get_specific_committee <- function(congress, chamber, committee_id, page = 1, myAPI_Key){
+get_specific_committee <- function(congress = cMaxCongress, chamber, committee_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)

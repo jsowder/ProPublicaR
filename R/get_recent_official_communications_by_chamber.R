@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_official_communications_by_chamber(115, 'house')
 #' }
-get_recent_official_communications_by_chamber <- function(congress, chamber, page = 1, myAPI_Key){
+get_recent_official_communications_by_chamber <- function(congress = cMaxCongress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber %in% c('house', 'senate')){
     stop("Incorrect chamber. Should be \'senate\' or \'house'\ , lowercase")

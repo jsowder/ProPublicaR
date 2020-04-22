@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_members_leaving(115, 'house')
 #' }
-get_members_leaving <- function(congress, chamber, page = 1, myAPI_Key){
+get_members_leaving <- function(congress = cMaxCongress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop('Incorrect Chamber. (Should be \'house\' or \'senate\', lowercase.')

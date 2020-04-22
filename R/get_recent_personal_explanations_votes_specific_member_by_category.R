@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_recent_personal_explanations_votes_specific_member_by_category('S001193', 115, 'personal')
 #' }
-get_recent_personal_explanations_votes_specific_member_by_category <- function(member_id, congress, category, page = 1, myAPI_Key){
+get_recent_personal_explanations_votes_specific_member_by_category <- function(member_id, congress = cMaxCongress, category, page = 1, myAPI_Key){
   API <- 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)

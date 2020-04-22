@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_amendments_bill(115, 'hr1628')
 #' }
-get_amendments_bill <- function(congress, bill_id, page = 1, myAPI_Key){
+get_amendments_bill <- function(congress = cMaxCongress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:cMaxCongress){
     stop("Congress should be between 105 and" ,cMaxCongress)
